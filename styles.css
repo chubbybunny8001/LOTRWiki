@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #2d1410;
+}
+
+a {
+    color: #333;
+}
+
+/*Navbar*/
+
+.nav-cont {
+    width: 100%;
+    height: 8vh;
+    background-color: #b99772;
+    
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Nav Logo*/
+.nav-logo-cont{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text{
+    margin: auto;
+    margin-right: auto;
+}
+
+.logo-textSub{
+    display: none;
+    margin: auto;
+    font-size: 2rem;
+}
+
+.logo-img-cont{
+    margin: auto;
+}
+
+.logo-img{
+    width: 50px;
+    margin: auto;
+}
+
+/*Nav Links*/
+.nav-ul{
+    display: flex;
+}
+
+.nav-item{
+    display: none;
+    padding: 5px 20px;
+}
+
+.nav-itemSub{
+    display: initial;
+    padding: 5px 20px;
+}
+
+/*Navbar Media Queries*/
+@media screen and (max-width:786px) {
+    .logo-textSub{display: block;}
+    .logo-text{display: none;}
+    .nav-item{display: block;}
+    .nav-itemSub{display: none;}
+    .nav-logo-cont{
+        width: 25%;
+    }
+}
+@media (max-width:480px) {
+    .logo-textSub{
+        display: none;
+    }
+    
+}
+
+/*Body Content*/
+.body-cont{
+    height: 86vh;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+.body-desc{
+    margin: 20px;
+    width: 50%;
+    color: #f6e3ca;
+    margin: auto;
+}
+
+.img-cont{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    padding: 2%;
+}
+
+.map{
+    width: 100%;
+    position: relative;
+    width: 100%;
+    background: white;
+    border-radius: 75% 100% 75% 100% / 100% 55% 100% 50%;
+    color: white;
+    transition: all .8s ease;
+    transition-delay:5s;
+}
+
+.map:hover {
+    border-radius: 0% 0% 0% 0% ;
+    transition-delay: 0s;
+}
+
+/*Body Content Media Queries*/
+@media (max-width: 786px) {
+    .body-cont{
+        flex-direction: column;
+        height: 85vh;
+    }
+    .body-desc{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .body-p{
+        font-size: 15px;
+    }
+    .img-cont{
+        width: 80%;
+        padding: 0;
+    }
+}
+
+/* POPUP 1 - Barad Dur*/
+.popup1 {
+    position: absolute;
+    bottom: 48.5%;
+    left: 79.2%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP2 - Minas Tirith*/
+.popup2 {
+    position: absolute;
+    bottom: 42.5%;
+    left: 62.5%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP3 - Isengard*/
+.popup3 {
+    position: absolute;
+    bottom: 55%;
+    left: 45%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP4 - Bree*/
+.popup4 {
+    position: absolute;
+    bottom: 68%;
+    left: 39.5%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP5 - The Black Gate*/
+.popup5{
+    position: absolute;
+    bottom: 52.5%;
+    left: 70.8%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP6 - Rivendell*/
+.popup6{
+    position: absolute;
+    bottom: 72.5%;
+    left: 48.8%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP7 - Bag End*/
+.popup7{
+    position: absolute;
+    bottom: 69.5%;
+    left: 31.5%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP8 - Edoras*/
+.popup8{
+    position: absolute;
+    bottom: 49.8%;
+    left: 49.2%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP9 - Erebor*/
+.popup9{
+    position: absolute;
+    bottom: 72.5%;
+    left: 71.8%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* POPUP10 - Erech*/
+.popup10{
+    position: absolute;
+    bottom: 45.4%;
+    left: 47.2%;
+    display: inline-block;
+    cursor: pointer;
+    color: red;
+    font-size: 2.5rem;
+}
+
+/* The actual popup text w/ text on the side*/
+.popup4 .popuptext4, .popup6 .popuptext6, .popup9 .popuptext9,
+.popup7 .popuptext7{
+    display: none;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -270%;
+    left: -1930%;
+    margin-left: -80px;
+}
+
+/* Actual Popup and where it will display above */
+.popup1 .popuptext, .popup2 .popuptext2, .popup3 .popuptext3,
+.popup5 .popuptext5, .popup8 .popuptext8,
+.popup10 .popuptext10{
+    display: none;
+    width: 250px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 32%;
+    left: -590%;
+    margin-left: -80px;
+}
+
+/* Show popup when you hover. Shows child element when hovered... */
+.popup2:hover .popuptext2, .popup1:hover .popuptext, .popup3:hover .popuptext3,
+.popup4:hover .popuptext4, .popup5:hover .popuptext5, .popup6:hover .popuptext6,
+.popup7:hover .popuptext7, .popup8:hover .popuptext8, .popup9:hover .popuptext9,
+.popup10:hover .popuptext10{
+    display: inline;
+    max-height: 300px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.popuptext, .popuptext2, .popuptext3, .popuptext4, .popuptext5, .popuptext6,
+.popuptext7, .popuptext8, .popuptext9, .popuptext10 {
+    font-size: 1rem;
+}
+
+.popup-text{
+    margin: 4px;
+}
+
+.video{
+    border-radius: 5px;
+    width: 95%;
+}
+
+/*Popup Media Queries*/
+@media (max-width: 786px) {
+    .popup1{
+        bottom: 47.5%;
+        left: 81.5%;
+    }
+    .popup2{
+        bottom: 41.5%;
+        left: 63.5%;
+    }
+    .popup3{
+        bottom: 55%;
+        left: 44.5%;
+    }
+    .popup4{
+        bottom: 69.5%;
+        left: 38%;
+    }
+    .popup5{
+        bottom: 52%;
+        left: 72.5%;
+    }
+    .popup6{
+        bottom: 74.5%;
+        left: 48.8%;
+    }
+    .popup7{
+        bottom: 71%;
+        left: 30%;
+    }
+    .popup8{
+        bottom: 49.5%;
+        left: 49%;
+    }
+    .popup9{
+        bottom: 74.5%;
+        left: 73.5%;
+    }
+    .popup10{
+        bottom: 45%;
+        left: 47%;
+    }
+    .popup4 .popuptext4, .popup6 .popuptext6, .popup7 .popuptext7, .popup9 .popuptext9{
+        bottom: 32%;
+        left: -590%;
+        width: 200px;
+    }
+    .popup1 .popuptext, .popup2 .popuptext2, .popup3 .popuptext3{
+        width: 200px;
+    }
+}
+@media (max-width: 425px) {
+    .popup1{
+        bottom: 46%;
+        left: 80.5%;
+    }
+    .popup2{
+        bottom: 39.5%;
+        left: 63%;
+    }
+    .popup3{
+        bottom: 53%;
+        left: 44%;
+    }
+    .popup4{
+        bottom: 67%;
+        left: 38%;
+    }
+    .popup5{
+        bottom: 50%;
+        left: 71.5%;
+    }
+    .popup6{
+        bottom: 72.5%;
+        left: 48.8%;
+    }
+    .popup7{
+        bottom: 69.7%;
+        left: 29.5%;
+    }
+    .popup8{
+        bottom: 46.5%;
+        left: 48.5%;
+    }
+    .popup9{
+        bottom: 72.5%;
+        left: 73%;
+    }
+    .popup10{
+        bottom: 42%;
+        left: 46%;
+    }
+    .popup5 .popuptext5{
+        width: 170px;
+    }
+    .popup4 .popuptext4{
+        bottom: 32%;
+        left: -90%;
+        width: 170px;
+    }
+    .popup3 .popuptext3{
+        bottom: 32%;
+        left: -190%;
+    }
+    .popup2 .popuptext2{
+        width: 170px;
+    }
+    .popup1 .popuptext{
+        bottom: 32%;
+        left: -860%;
+    }
+}

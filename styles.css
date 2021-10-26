@@ -364,10 +364,14 @@ a {
         bottom: 45%;
         left: 47%;
     }
-    .popup4 .popuptext4, .popup6 .popuptext6, .popup7 .popuptext7, .popup9 .popuptext9{
+    .popup4 .popuptext4, .popup6 .popuptext6, .popup9 .popuptext9{
         bottom: 32%;
         left: -590%;
         width: 200px;
+    }
+    .popup7 .popuptext7{
+        bottom: 32%;
+        left: 290%;
     }
     .popup1 .popuptext, .popup2 .popuptext2, .popup3 .popuptext3{
         width: 200px;

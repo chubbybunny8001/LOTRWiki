@@ -449,7 +449,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(77,77,77,0.7);
+    background-color: rgba(77, 77, 77, 0.7);
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
@@ -502,4 +502,8 @@ a {
     .modal-h1{
         font-size: 1rem;
     }
+}
+/* Custom Scroll Bar */
+::-webkit-scrollbar{
+    width: 0px;
 }

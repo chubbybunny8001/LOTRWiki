@@ -71,6 +71,10 @@ a {
 .nav-itemSub{
     display: initial;
     padding: 5px 20px;
+    transition: all .4s;
+} .nav-itemSub:hover{
+    text-decoration: underline;
+    font-size: 105%;
 }
 
 /*Navbar Media Queries*/
@@ -482,12 +486,12 @@ a {
 
 /* Content inside modal styles */
 .modal-h1{
-    margin: 20px;
+    margin: 5%;
     font-size: 2rem;
     text-decoration: underline;
 }
 .modal-p{
-    margin: 4px;
+    margin: 5px;
 }
 
 @media (max-width:786px) {

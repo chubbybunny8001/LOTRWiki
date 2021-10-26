@@ -482,6 +482,7 @@ a {
 
 /* Content inside modal styles */
 .modal-h1{
+    margin: 10px;
     font-size: 2rem;
     text-decoration: underline;
 }

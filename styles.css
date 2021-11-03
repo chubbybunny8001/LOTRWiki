@@ -105,19 +105,33 @@ a {
 
 .body-desc{
     margin: 20px;
-    width: 50%;
+    width: 46%;
+    height: 40vh;
     color: #f6e3ca;
     margin: auto;
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
+    justify-content: space-between;
+}
+
+.imgBodCont{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 48%;
+    margin-bottom: 0;
+}
+
+.imgTitle{
+    color: #f6e3ca;
+    text-decoration: underline;
 }
 
 .img-cont{
     position: relative;
     margin: auto;
     text-align: center;
-    width: 50%;
+    width: 100%;
     padding: 2%;
 }
 
@@ -146,16 +160,22 @@ a {
     .body-desc{
         width: 100%;
         margin: 0;
-        margin-bottom: 20px;
         overflow: scroll;
         overflow-x: hidden;
+        height: auto;
     }
     .body-p{
         font-size: 15px;
     }
-    .img-cont{
+    .img-cont, .imgBodCont{
         width: 80%;
         padding: 0;
+    }
+    .imgBodCont{
+        margin-top: 0;
+    }
+    .imgTitle{
+        font-size: 1rem;
     }
 }
 

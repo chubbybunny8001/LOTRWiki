@@ -7,7 +7,11 @@
 }
 
 body{
-    background-color: #2d1410;
+    background-color: #b99772;
+    background-image: url(LOTRBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 a {
@@ -119,12 +123,14 @@ a {
     margin: auto;
     text-align: center;
     width: 48%;
-    margin-bottom: 0;
 }
 
 .imgTitle{
     color: #f6e3ca;
     text-decoration: underline;
+    font-size: 2rem;
+    margin: 5%;
+    margin-top: 0;
 }
 
 .img-cont{
@@ -132,7 +138,6 @@ a {
     margin: auto;
     text-align: center;
     width: 100%;
-    padding: 2%;
 }
 
 .map{
@@ -151,6 +156,11 @@ a {
     transition-delay: 0s;
 }
 
+.svg{
+    font-size: 3em;
+    color: aqua;
+}
+
 /*Body Content Media Queries*/
 @media (max-width: 786px) {
     .body-cont{
@@ -163,6 +173,8 @@ a {
         overflow: scroll;
         overflow-x: hidden;
         height: auto;
+        background-color: rgba(77, 77, 77, 0.2);
+        border-radius: 10px;
     }
     .body-p{
         font-size: 15px;
@@ -171,9 +183,12 @@ a {
         width: 80%;
         padding: 0;
     }
-    .imgBodCont{
-        margin-top: 0;
+    .imgTitle{
+        font-size: 2rem;
+        margin: 10%;
     }
+}
+@media (max-width: 480px){
     .imgTitle{
         font-size: 1rem;
     }
@@ -183,22 +198,30 @@ a {
 .popup1 {
     position: absolute;
     bottom: 48.5%;
-    left: 79.2%;
+    left: 82%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: black;
+}
+
+.popup1 .s{
+    background-color: red;
+    border-radius: 50%;
 }
 
 /* POPUP2 - Minas Tirith*/
 .popup2 {
     position: absolute;
     bottom: 42.5%;
-    left: 62.5%;
+    left: 63%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: rgb(196, 179, 83);
+}
+
+.popup2 .s{
+    background-color: white;
+    border-radius: 50%;
 }
 
 /* POPUP3 - Isengard*/
@@ -208,64 +231,84 @@ a {
     left: 45%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: black;
+    font-size: 1em;
 }
+
+.popup3 .s{
+    background-color: red;
+    border-radius: 50%;
+}
+
 
 /* POPUP4 - Bree*/
 .popup4 {
     position: absolute;
-    bottom: 68%;
-    left: 39.5%;
+    bottom: 70%;
+    left: 38%;
     display: inline-block;
     cursor: pointer;
-    color: red;
+    color: rgb(196, 179, 83);
     font-size: 2.5rem;
+}
+
+.popup4 .s{
+    padding: 1px;
+    background-color: brown;
+    border-radius: 50%;
+    font-size: .2em;
 }
 
 /* POPUP5 - The Black Gate*/
 .popup5{
     position: absolute;
     bottom: 52.5%;
-    left: 70.8%;
+    left: 72.8%;
     display: inline-block;
     cursor: pointer;
-    color: red;
+    color: black;
     font-size: 2.5rem;
+}
+
+.popup5 .s{
+    padding: 2px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: .2em;
 }
 
 /* POPUP6 - Rivendell*/
 .popup6{
     position: absolute;
-    bottom: 72.5%;
+    bottom: 74.5%;
     left: 48.8%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: rgb(196, 179, 83);
 }
-.pop-up-button{
-    color: #f6e3ca;
-    text-decoration: underline;        
-    transition: all ease-in-out .5s;
-    background-color: rgb(101, 101, 101, .4);
+
+.popup6 .s{
+    padding: 2px;
+    background-color: lightblue;
     border-radius: 50%;
-    padding: 10px;
-    margin: auto;
+    font-size: .2em;
 }
-    .pop-up-button:hover{
-        color: #f3cf9f;
-    }
 
 /* POPUP7 - Bag End*/
 .popup7{
     position: absolute;
-    bottom: 69.5%;
-    left: 31.5%;
+    bottom: 71.5%;
+    left: 30.5%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: rgb(196, 179, 83);
+}
+
+.popup7 .s{
+    padding: 2px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    font-size: .2em;
 }
 
 /* POPUP8 - Edoras*/
@@ -275,19 +318,27 @@ a {
     left: 49.2%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: rgb(196, 179, 83);
+}
+
+.popup8 .s {
+    background-color: green;
+    border-radius: 50%;
 }
 
 /* POPUP9 - Erebor*/
 .popup9{
     position: absolute;
-    bottom: 72.5%;
-    left: 71.8%;
+    bottom: 74.5%;
+    left: 73.4%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: ivory;
+}
+
+.popup9 .s {
+    background-color: gold;
+    border-radius: 50%;
 }
 
 /* POPUP10 - Erech*/
@@ -297,8 +348,27 @@ a {
     left: 47.2%;
     display: inline-block;
     cursor: pointer;
-    color: red;
-    font-size: 2.5rem;
+    color: gray;
+}
+
+.popup10 .s {
+    padding: 2px;
+    background-color: brown;
+    border-radius: 50%;
+    font-size: .2em;
+}
+
+.pop-up-button{
+    color: #f6e3ca;
+    text-decoration: underline;        
+    transition: all ease-in-out .5s;
+    background-color: rgb(101, 101, 101, .4);
+    border-radius: 50%;
+    padding: 10px;
+    margin: auto;
+}
+.pop-up-button:hover{
+    color: #f3cf9f;
 }
 
 /* The actual popup text w/ text on the side*/
@@ -314,8 +384,8 @@ a {
     position: absolute;
     z-index: 1;
     bottom: -270%;
-    left: -1930%;
-    margin-left: -80px;
+    left: -1550%;
+    /* margin-left: -80px; */
 }
 
 /* Actual Popup and where it will display above */
@@ -331,7 +401,7 @@ a {
     padding: 8px 0;
     position: absolute;
     z-index: 1;
-    bottom: 32%;
+    bottom: 95%;
     left: -590%;
     margin-left: -80px;
 }
@@ -363,6 +433,9 @@ a {
 
 /*Popup Media Queries*/
 @media (max-width: 786px) {
+    .s{
+        font-size: .5rem;
+    }
     .popup1{
         bottom: 47.5%;
         left: 81.5%;
@@ -404,7 +477,7 @@ a {
         left: 47%;
     }
     .popup1 .popuptext, .popup4 .popuptext4, .popup6 .popuptext6, .popup9 .popuptext9{
-        bottom: 32%;
+        bottom: 95%;
         left: -590%;
         width: 200px;
     }
@@ -417,6 +490,9 @@ a {
     }
 }
 @media (max-width: 425px) {
+    .s{
+        padding: 1px;
+    }
     .popup1{
         bottom: 46%;
         left: 80.5%;
@@ -446,7 +522,7 @@ a {
         left: 29.5%;
     }
     .popup8{
-        bottom: 46.5%;
+        bottom: 48.5%;
         left: 48.5%;
     }
     .popup9{
@@ -545,6 +621,7 @@ a {
 
 /* Popup Modal Styles */
 .popmodal{
+    z-index: 999;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -592,9 +669,6 @@ a {
     text-decoration: underline;
 }
 
-.popmodal-body{
-}
-
 .popmodal-img{
     width: 50%;
     margin: auto;
@@ -637,7 +711,7 @@ a {
     width: 0px;
 }
 
-@font-face {
+/* @font-face {
     font-family: Arial, Helvetica, sans-serif;
     font-display: swap;
-}
+} */

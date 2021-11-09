@@ -104,7 +104,6 @@ a {
     display: flex;
     justify-content: space-around;
     margin: 20px;
-
 }
 
 .body-desc{
@@ -116,6 +115,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: rgba(77, 77, 77, 0.2);
 }
 
 .imgBodCont{
@@ -156,11 +156,6 @@ a {
     transition-delay: 0s;
 }
 
-.svg{
-    font-size: 3em;
-    color: aqua;
-}
-
 /*Body Content Media Queries*/
 @media (max-width: 786px) {
     .body-cont{
@@ -175,22 +170,28 @@ a {
         height: auto;
         background-color: rgba(77, 77, 77, 0.2);
         border-radius: 10px;
+        height: 30%;
     }
     .body-p{
         font-size: 15px;
     }
     .img-cont, .imgBodCont{
-        width: 80%;
+        width: 85%;
         padding: 0;
+        margin-top: 0;
     }
     .imgTitle{
         font-size: 2rem;
-        margin: 10%;
+        margin: 4%;
     }
 }
 @media (max-width: 480px){
     .imgTitle{
-        font-size: 1rem;
+        font-size: 1.5rem;
+        margin-bottom: 10%;
+    }
+    .imgBodCont{
+        margin: auto;
     }
 }
 
@@ -249,14 +250,13 @@ a {
     display: inline-block;
     cursor: pointer;
     color: rgb(196, 179, 83);
-    font-size: 2.5rem;
 }
 
 .popup4 .s{
     padding: 1px;
     background-color: brown;
     border-radius: 50%;
-    font-size: .2em;
+    font-size: .7em;
 }
 
 /* POPUP5 - The Black Gate*/
@@ -267,14 +267,13 @@ a {
     display: inline-block;
     cursor: pointer;
     color: black;
-    font-size: 2.5rem;
 }
 
 .popup5 .s{
     padding: 2px;
     background-color: red;
     border-radius: 50%;
-    font-size: .2em;
+    font-size: .7em;
 }
 
 /* POPUP6 - Rivendell*/
@@ -291,7 +290,7 @@ a {
     padding: 2px;
     background-color: lightblue;
     border-radius: 50%;
-    font-size: .2em;
+    font-size: .7em;
 }
 
 /* POPUP7 - Bag End*/
@@ -308,7 +307,7 @@ a {
     padding: 2px;
     background-color: lightgreen;
     border-radius: 50%;
-    font-size: .2em;
+    font-size: .7em;
 }
 
 /* POPUP8 - Edoras*/
@@ -355,7 +354,7 @@ a {
     padding: 2px;
     background-color: brown;
     border-radius: 50%;
-    font-size: .2em;
+    font-size: .7em;
 }
 
 .pop-up-button{
@@ -436,6 +435,15 @@ a {
     .s{
         font-size: .5rem;
     }
+    .popup2 .s, .popup3 .s, .popup8 .s, .popup9 .s, .popup1 .s{
+        font-size: 1em;
+    }
+    .popup4 .s, .popup6 .s, .popup7 .s, .popup10 .s{
+        font-size: .8em;
+    }
+    .popup5 .s{
+        font-size: .8em;
+    }
     .popup1{
         bottom: 47.5%;
         left: 81.5%;
@@ -492,6 +500,15 @@ a {
 @media (max-width: 425px) {
     .s{
         padding: 1px;
+    }
+    .popup2 .s, .popup3 .s, .popup8 .s, .popup9 .s, .popup1 .s{
+        font-size: .7em;
+    }
+    .popup4 .s, .popup6 .s, .popup7 .s, .popup10 .s{
+        font-size: .5em;
+    }
+    .popup5 .s{
+        font-size: .5em;
     }
     .popup1{
         bottom: 46%;
@@ -568,6 +585,8 @@ a {
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .modal:target{
@@ -586,6 +605,15 @@ a {
         overflow-x: hidden;
 }
 
+.modalContentBody{
+    display: flex;
+}
+
+.videoCont{
+    width: 50%;
+    margin: auto;
+}
+
 .modalclose{
     position: absolute;
     top: 0;
@@ -602,12 +630,27 @@ a {
     text-decoration: underline;
 }
 .modal-p{
-    margin: 5px;
+    margin: auto;
+    text-align: center;
+    margin-right: 5px;
+    width: 50%;
 }
 
 @media (max-width:786px) {
     .modal-h1{
         font-size: 1.5rem;
+    }
+    .modalContentBody{
+        flex-direction: column;
+    }
+    .videoCont{
+        width: 90%;
+        margin: auto;
+        margin-top: 5px;
+    }
+    .modal-p{
+        width: 90%;
+        margin: auto;
     }
     
 }
@@ -634,6 +677,8 @@ a {
     transition: all 0.5s;
     visibility: hidden;
     opacity: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .popmodal:target{
